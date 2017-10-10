@@ -137,13 +137,13 @@
       const min = d3.min(temperaturaPorMes, d => d.temperatura);
       const max = d3.max(temperaturaPorMes, d => d.temperatura);
 
-      const nestedByDecadeAndMonth = d3.nest()
+      const nestedByYear = d3.nest()
         .key(d => {
           return d.anio;
         })
         .entries(temperaturaPorMes);
 
-      nestedByDecadeAndMonth.forEach((year, i) => {
+      nestedByYear.forEach((year, i) => {
 
         const data = year.values.map((d) => {
           return {
@@ -168,6 +168,7 @@
         circos.heatmap(`temperatura-en-anio-${year.key}`, data, config);
 
       })
+
       circos.render();
     });
 }());
