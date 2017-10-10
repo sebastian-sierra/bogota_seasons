@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src='https://nicgirault.github.io/circosJS/dist/circos.js'></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<style>
+  #desc {
+    font-family: 'Raleway', sans-serif;
+    margin-right: 1em;
+    margin-left: 3em;
+  }
+
+  #tooltip {
+    font-family: 'Lato', sans-serif;
+  }
+</style>
+
+<body>
+
+  <div class="row">
+    <h1 style="text-align: center">Bogotá SÍ tiene primavera</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-7">
+      <div id="temperature_chart" width="600" height="600"></div>
+    </div>
+    <div class="col-md-5">
+      <div class="row" id="desc">
+        <h3>¿Cuál serán las temporadas climatológicas en Bogotá?</h3>
+        <p>
+          La gráfica a la izquierda muestra el promedio de temperatura mensual en Bogotá desde 1966 hasta el 2016, de afuera hacia adentro respectivamente.
+          <br>Basándonos en esta podemos concluir varias cosas:
+          <ul>
+            <li>
+              El verano bogotano va desde marzo hasta mayo.
+            </li>
+            <li>
+              Este mismo esta encerrado entre dos inviernos, uno entre diciembre a febrero y otro de julio a agosto.
+            </li>
+            <li>
+              La primavera empieza en septiembre y termina noviembre.
+            </li>
+            <li>
+              El periodo entre enero y marzo presenta una fuerte irregularidad, seguramente por las visitas del fenómeno del niño.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row" id="desc">
+        <h3>¿Y las lluvias?</h3>
+        <p>
+          Ahora a la derecha, podemos ver el mismo gráfico pero para las precipitationes totales por mes.
+          <br> Varias cosas nos quedan claras:
+          <ul>
+            <li>
+              La primavera mencionada anteriormente, coincide con el periodo de más fuertes lluvias.
+            </li>
+            <li>
+              El verano también cuenta con sus lluvias tropicales.
+            </li>
+            <li>
+              La sequía va diciembre a enero y febrero vuelve a presentar sus irregularidades.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div id="precipitation_chart" width="600" height="600"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/temperature.js"></script>
+  <script src="scripts/precipitation.js"></script>
+</body>
+
+</html>
