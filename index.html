@@ -10,21 +10,21 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <style>
-  #desc {
+  #title {
+    text-align: center;
+  }
+
+  .desc {
     font-family: 'Raleway', sans-serif;
     margin-right: 1em;
     margin-left: 3em;
-  }
-
-  #tooltip {
-    font-family: 'Lato', sans-serif;
   }
 </style>
 
 <body>
 
   <div class="row">
-    <h1 style="text-align: center">Bogotá SÍ tiene primavera</h1>
+    <h1 id="title">Bogotá SÍ tiene primavera</h1>
   </div>
 
   <div class="row">
@@ -32,8 +32,8 @@
       <div id="temperature_chart" width="600" height="600"></div>
     </div>
     <div class="col-md-5">
-      <div class="row" id="desc">
-        <h3>¿Cuáles serán las temporadas climatológicas en Bogotá?</h3>
+      <div class="row desc">
+        <h3>¿Cuáles serán las temporadas climatológicas de Bogotá?</h3>
         <p>
           La gráfica a la izquierda muestra el promedio de temperatura mensual en Bogotá desde 1966 hasta el 2016, de afuera hacia adentro respectivamente.
           <br>Basándonos en esta podemos concluir varias cosas:
@@ -42,10 +42,10 @@
               El verano bogotano va desde marzo hasta mayo.
             </li>
             <li>
-              Este mismo esta encerrado entre dos inviernos, uno entre diciembre a febrero y otro de julio a agosto.
+              Este mismo esta encerrado entre dos inviernos, uno de diciembre a febrero y otro de julio a agosto.
             </li>
             <li>
-              La primavera empieza en septiembre y termina noviembre.
+              La primavera empieza en septiembre y termina en noviembre.
             </li>
             <li>
               El periodo entre enero y marzo presenta una fuerte irregularidad, seguramente por las visitas del fenómeno del niño.
@@ -58,7 +58,7 @@
 
   <div class="row">
     <div class="col-md-6">
-      <div class="row" id="desc">
+      <div class="row desc">
         <h3>¿Y las lluvias?</h3>
         <p>
           Ahora a la derecha, podemos ver el mismo gráfico pero para las precipitationes totales por mes.
@@ -71,7 +71,7 @@
               El verano también cuenta con sus lluvias tropicales.
             </li>
             <li>
-              La sequía va diciembre a enero y febrero vuelve a presentar sus irregularidades.
+              La sequía va de diciembre a enero y febrero vuelve a presentar sus irregularidades.
             </li>
           </ul>
         </p>
