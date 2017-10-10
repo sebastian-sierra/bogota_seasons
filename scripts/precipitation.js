@@ -39,7 +39,7 @@
         octubre: +row.OCTUBRE,
         noviembre: +row.NOVIEMBRE,
         diciembre: +row.DICIEMBRE
-      }
+      };
     },
     (error, data) => {
       if (error) throw error;
@@ -54,10 +54,10 @@
             .filter(k => k !== 'municipio' && k !== 'cuenca' && k !== 'anio')
             .map(k => {
               return {
-                anio: d['anio'],
+                anio: d.anio,
                 mes: k,
                 precipitacion: d[k]
-              }
+              };
             }));
         }, [])
         .filter(d => d.precipitacion > 0);
@@ -79,7 +79,7 @@
             end: 10,
             value: d.precipitacion,
             year: year.key
-          }
+          };
         });
 
         const config = {
@@ -89,13 +89,13 @@
           color: 'Blues',
           events: {},
           tooltipContent: (datum, index) => {
-            return `<h5>${datum.value} mm en ${datum.year}</h5>`
+            return `<h5>${datum.value} mm en ${datum.year}</h5>`;
           }
         };
 
         circos.heatmap(`precipitacion-en-anio-${year.key}`, data, config);
 
-      })
+      });
 
       circos.render();
     });

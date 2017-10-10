@@ -39,7 +39,7 @@
         octubre: +row.OCTUBRE,
         noviembre: +row.NOVIEMBRE,
         diciembre: +row.DICIEMBRE
-      }
+      };
     },
     (error, data) => {
       if (error) throw error;
@@ -54,10 +54,10 @@
             .filter(k => k !== 'municipio' && k !== 'cuenca' && k !== 'anio')
             .map(k => {
               return {
-                anio: d['anio'],
+                anio: d.anio,
                 mes: k,
                 temperatura: d[k]
-              }
+              };
             }));
         }, [])
         .filter(d => d.temperatura > 1.2);
@@ -79,7 +79,7 @@
             end: 10,
             value: d.temperatura,
             year: year.key
-          }
+          };
         });
 
         const config = {
@@ -89,7 +89,7 @@
           color: 'YlOrRd',
           events: {},
           tooltipContent: datum => {
-            return `<h5>${datum.value} ºC en ${datum.year}</h5>`
+            return `<h5>${datum.value} ºC en ${datum.year}</h5>`;
           }
         };
 
