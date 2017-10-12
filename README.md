@@ -1,6 +1,6 @@
 # Bogota Seasons
 
-As a part of the Visual Analytics course at Universidad de los Andes, I have taken the [average temperature](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Temperaturas-Medias/6te7-njc8) of Bogotá month by month from the last 50 years and their [precipitation total](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Precipitaciones-Totales-Mensuales/mb4n-6m2g) from [*Datos Abiertos*](https://www.datos.gov.co). Making use of the [CircosJS](https://github.com/nicgirault/circosJS) vis library, I have made this visualization to try to understand the seasonal patterns Bogotá may have as a tropical city located near to the Equator.
+As a part of the [Visual Analytics course](http://johnguerra.co/classes/visual_analytics_fall_2017) at Universidad de los Andes, I have taken the [average temperature](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Temperaturas-Medias/6te7-njc8) of Bogotá month by month from the last 50 years and their [precipitation total](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Precipitaciones-Totales-Mensuales/mb4n-6m2g) from [*Datos Abiertos*](https://www.datos.gov.co). Making use of the [CircosJS](https://github.com/nicgirault/circosJS) vis library, I have made this visualization to try to understand the seasonal patterns Bogotá may have as a tropical city located near to the Equator.
 
 You can see the demo running [here](https://ss1993.github.io/bogota_seasons/).
 
